@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official website of Joshua Oyewole – Author of Altars and Patterns, sharing daily inspiration, revival messages, discipleship classes, and spiritual teachings." />
+  <title>Joshua Oyewole | Daily Inspiration & Discipleship</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #222; margin: 0; padding: 0; }
+    header { background: linear-gradient(135deg, #2e026d, #7b2ff7); color: white; text-align: center; padding: 3rem 1rem; }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+    header img { width: 200px; height: 250px; border-radius: 50%; margin-top: 1rem; border: 3px solid gold; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; background: #f2f2f2; padding: 0.8rem; }
+    nav a { color: #2e026d; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #7b2ff7; }
+    .container { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    .section { margin-bottom: 3rem; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+    .section h2 { color: #2e026d; font-size: 1.6rem; border-left: 5px solid #7b2ff7; padding-left: 0.7rem; margin-bottom: 1rem; }
+    .post { background: #fafafa; border-radius: 10px; padding: 1rem 1.2rem; margin-top: 1rem; border-left: 4px solid #7b2ff7; }
+    .post h3 { color: #2e026d; margin-bottom: 0.5rem; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1rem; }
+    .gallery img { width: 30%; border-radius: 12px; border: 2px solid #7b2ff7; }
+    form input, form textarea, form button { width: 100%; padding: 0.8rem; margin: 0.5rem 0; border-radius: 8px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif; }
+    form button { background: #7b2ff7; color: white; border: none; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+    form button:hover { background: #2e026d; }
+    .confirmation { color: green; margin-top: 0.5rem; font-weight: 600; }
+    footer { background: #2e026d; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    @media (max-width: 600px) { header h1 { font-size: 1.8rem; } .section { padding: 1.2rem; } .gallery img { width: 80%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joshua Oyewole</h1>
+    <p>Raising burning believers and breaking ungodly patterns through truth and revival</p>
+    <img src="Joshuao.png" Alt="Joshua oyewole">
+    		
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#inspiration">Inspiration</a>
+    <a href="#discipleship">Discipleship</a>
+    <a href="#contact">Contact</a>
+  </nav>  <main class="container">
+    <section id="home" class="section">
+      <h2>Welcome</h2>
+      <p>Welcome to the official website of <strong>Joshua Oyewole</strong> — a platform built to ignite revival, restore broken altars, and raise a generation that walks in purity, fire, and purpose.</p>
+      <p><em>“When altars are broken, destinies are restored.”</em></p>
+    </section><section id="about" class="section">
+  <h2>About</h2>
+  <p>Joshua Oyewole is a passionate Christian writer and youth revivalist with a deep hunger to see believers walk in purity, fire, and purpose. He is the author of <em>Altars and Patterns</em>, a life-transforming book that uncovers how ancestral altars influence generations and reveals how believers can rise above them through Christ.</p>
+  <p>Driven by love for God and souls, Joshua’s vision is to awaken hearts, rebuild godly foundations, and equip young believers to carry the fire of revival.</p>
+</section>
+
+<section id="inspiration" class="section">
+  <h2>Daily Inspiration</h2>
+  <div class="post">
+    <h3>The Fire Must Not Go Out</h3>
+    <p>Revival is not a feeling; it’s a lifestyle. When the altar of prayer is cold, destiny freezes.</p>
+  </div>
+  <div class="post">
+    <h3>When God Calls You Out of the Crowd</h3>
+    <p>Separation is not rejection — it’s preparation for elevation.</p>
+  </div>
+  <section id="videos" class="section">
+  <h2>Daily Video Inspiration</h2>
+  <p>Videos coming soon!</p>
+</section>
+</section>
+<section id="discipleship" class="section">
+  <h2>Join the Discipleship Class</h2>
+  <p>Grow in fire, truth, and intimacy with God. Register to be part of our discipleship family.</p>
+
+  <form id="discipleshipForm" action="mailto:oyewolevictor870@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="instagram" placeholder="Instagram Handle (optional)">
+    <textarea name="reason" rows="4" placeholder="Why do you want to join?" required></textarea>
+    <button type="submit">Register</button>
+    <p class="confirmation" id="confirmationMessage"></p>
+  </form>
+
+  <script>
+    const form = document.getElementById('discipleshipForm');
+    const confirmation = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function(e) {
+      setTimeout(() => { 
+        confirmation.textContent = 'Thank you for registering! You’ll be contacted soon.'; 
+        form.reset(); 
+      }, 500);
+    });
+  </script>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:oyewolevictor870@gmail.com">oyewolevictor870@gmail.com</a></p>
+  <p><strong>Phone:</strong> 08108584592</p>
+  <p><strong>Facebook:</strong> Joshua Oyewole</p>
+  <p><strong>Page:</strong> Victor Oyewole</p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Joshua Oyewole. All rights reserved.</p>
+  </footer>  <script>
+    // Confirmation message for discipleship form
+    const form = document.getElementById('discipleshipForm');
+    const confirmation = document.getElementById('confirmationMessage');
+    form.addEventListener('submit', function(e) {
+      setTimeout(() => { confirmation.textContent = 'Thank you for registering! You’ll be contacted soon.'; form.reset(); }, 500);
+    });
+  </script></body>
+</html>
+
